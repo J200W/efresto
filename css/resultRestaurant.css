@@ -1,0 +1,101 @@
+.titlePageResult {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.cityName {
+    color : #f27100;
+}
+
+.result-box {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 500px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    min-height: 600px;
+}
+
+.result-box > a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 724px) {
+    .result-box {
+      --num-cols: 1;
+      --row-height: 500px;
+
+      box-sizing: border-box;
+      padding: var(--gap);
+      display: grid;
+      grid-template-columns: repeat(var(--num-cols), 1fr);
+      grid-auto-rows: var(--row-height);
+      gap: var(--gap);
+      min-height: 600px;
+    }
+  }
+
+.image-space {
+    width: auto;
+    height: 300px;
+    background: none;
+    margin-bottom: 30px;
+    transition: 0.25s;
+}
+
+.result-photo {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+.result {
+    height: 600px;
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    background: white;
+    transition: 0.25s;
+}
+
+.result:hover {
+    box-shadow: 0 0 20px gray;
+    transition: 0.25s;
+}
+
+.result-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p > span {
+    color: #f27100;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: #f27100;
+    color: #f27100;
+    margin: 0 auto;
+}
+
+.btn-primary:hover {
+    background-color: #f27100;
+    border-color: #f27100;
+    color: white;
+}
+
+.modify {
+    margin-top: 20px !important;
+    width: fit-content;
+    margin: 0 auto;
+  }

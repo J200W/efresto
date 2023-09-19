@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+tr {
+    height: 50px
+}
+
+.sel {
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+body {
+    font: 14px sans-serif;
+}
+
+.createResto-box {
+    width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px gray;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: #f27100;
+    color: #f27100;
+    margin-bottom: 10px !important;
+}
+
+.btn-primary:hover {
+    background-color: #f27100;
+    border-color: #f27100;
+    color: white;
+}
+
+.form-check {
+    margin-bottom: 20px ;
+}
+
+.submit-button{
+    text-align: center;
+}
+
+.form-group .succeed{
+    text-align: center;
+}
+
+.createResto-box{
+    text-align: center;
+}

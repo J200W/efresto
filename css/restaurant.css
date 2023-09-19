@@ -1,0 +1,303 @@
+.resto-box {
+    margin: 0 auto;
+
+}
+
+.resto-photo {
+    min-height: 550px;
+    max-height: 550px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restoTop {
+  --gap: 0px;
+  --num-cols: 2;
+  --row-height: 500px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: min-content;
+  gap: var(--gap);
+}
+
+@media (max-width: 1100px) {
+  .restoTop {
+    --num-cols: 1;
+    --row-height: 500px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: min-content;
+    gap: var(--gap);
+  }
+
+  .leftPanelImg img {
+    min-height: 15px;
+    max-height: 15px;
+    min-width: 15px;
+    max-width: 15px;
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    background: none;
+  }
+}
+
+.restoInfoBox {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.commentSection {
+    margin-bottom: 50px;
+}
+
+.commentBox {
+  background: white;
+  padding: 1%;
+  width: 90%;
+  display: flex;
+  border-radius: 15px;
+  margin-top: 20px !important;
+  color: black;
+  font-size: 2vmin;
+  border: solid 3px #f27100;
+  margin: 0 auto;
+}
+
+.leftPanelImg {
+  float: left;
+  flex: 1;
+}
+
+.leftPanelImg img {
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  background: none;
+}
+
+@media (max-width: 1295px) {
+  .leftPanelImg img {
+    min-height: 95px;
+    max-height: 95px;
+    min-width: 95px;
+    max-width: 95px;
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    background: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .leftPanelImg img {
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    background: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .leftPanelImg img {
+    min-height: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    background: none;
+  }
+}
+
+.rightPanel{
+  width: 85%;
+  float: right;
+  margin-left: 1%;
+  flex: 1;
+  font-family: nos, sans-serif;
+}
+
+.theComment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+#comment {
+  width: 100%;
+  min-height: 150px
+}
+
+#commForm, #commForm2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background-color: white;
+  border-color: #f27100;
+  color: #f27100;
+  margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #f27100;
+    border-color: #f27100;
+    color: white;
+}
+
+.clear{
+    clear: both;
+}
+
+.ratingnumber {
+    font-size: 4vmin;
+}
+
+.ratingnumber > span {
+    color: #f27100;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.restoInfoBox > h3 {
+  font-size: 4vmin;
+}
+
+.restoInfoBox p {
+  font-size: 2vmin;
+  margin-bottom: 10px;
+}
+
+p.textInfo {
+  margin-bottom: 0px;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #f27100;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #f27100;
+}
+
+.modify {
+  margin-top: 20px !important;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.orange, .orange a {
+  color: #f27100;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+td, th {
+  font-size: 1.5vmin;
+}
+
+.fav {
+  background: #ff3567;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2vmin;
+}
+
+.deleteAdmin {
+  font-size: 1.5vmin;
+}

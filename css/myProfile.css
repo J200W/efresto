@@ -1,0 +1,48 @@
+.profile-box {
+    width: 90%;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px gray;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 5%;
+    background-color: white;
+}
+
+.submit-button {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: #f27100;
+    color: #f27100;
+    margin: 0 auto;
+    position: center;
+}
+
+.btn-primary:hover {
+    background-color: #f27100;
+    border-color: #f27100;
+    color: white;
+}
+
+.signLink {
+    color: #f27100;
+    text-decoration: none;
+}
+
+.form-check {
+    margin-bottom: 20px ;
+}
+
+.pdp {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
