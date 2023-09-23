@@ -54,6 +54,7 @@ Il a les mêmes fonctionnalités que
 Nous avons mis à votre disposition une base de données MySQL en format .zip que vous pourrez intégrer sur PHPMyAdmin en local ou sur une base de données en ligne. 
 
 Utilisez XAMPP ou WAMPP pour l'initisalisation de la base de données MySQL en local et augmentez "max_allowed_packet" dans le fichier my.cnf (ouvrable en appuyant sur "Open Conf File").
+
 <img width="500" alt="Capture d’écran 2023-09-23 à 11 48 37" src="https://github.com/J200W/efresto/assets/94389835/70ba8983-c468-4ba7-bfd8-25be3b261596">
 
 <img width="500" alt="Capture d’écran 2023-09-23 à 11 47 52" src="https://github.com/J200W/efresto/assets/94389835/f600ea5b-9adf-4e1d-9744-9d0c2ad6e28d">
