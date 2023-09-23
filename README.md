@@ -4,7 +4,7 @@ EFRESTO est un site web permettant aux utilisateurs  d'explorer, commenter et no
 
 ## Fonctionnalités
 
-### Utilisateurs basiques :
+### Utilisateur basique :
 
 - **Inscription et authentification :** Les utilisateurs peuvent créer un compte et se connecter avec uniquement un e-mail et un mot de passe qu'ils auront défini.
 
