@@ -13,7 +13,7 @@ EFRESTO est un site web permettant aux utilisateurs  d'explorer, commenter et no
 
 - **Modification du compte :** Vous avez la posibilité de modifier vos informations tels que : votre nom et prénom, votre e-mail et mot de passe et votre photo de profil.
 
-![image](https://github.com/J200W/efresto/assets/94389835/2537e241-240f-46c8-9268-5586bf1a4291)
+![image](https://github.com/J200W/efresto/assets/94389835/abd5adae-8c41-4bd8-b6ca-c19b52168f0e)
 
 
 
