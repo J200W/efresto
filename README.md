@@ -13,8 +13,7 @@ EFRESTO est un site web permettant aux utilisateurs  d'explorer, commenter et no
 
 - **Modification du compte :** Vous avez la posibilité de modifier vos informations tels que : votre nom et prénom, votre e-mail et mot de passe et votre photo de profil.
 
-![image](https://github.com/J200W/efresto/assets/94389835/abd5adae-8c41-4bd8-b6ca-c19b52168f0e)
-
+<img width="500" alt="image" src="https://github.com/J200W/efresto/assets/94389835/abd5adae-8c41-4bd8-b6ca-c19b52168f0e">
 
 
 - **Recherche de restaurants :** EFRESTO offre un catalogue de restaurants du monde entier, prêts à être explorés et appréciés par les amoureux de la cuisine. Il vous suffit de sélectionner un continent puis un pays et/ou une ville dans ce dernier.
