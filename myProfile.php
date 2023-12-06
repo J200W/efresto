@@ -37,7 +37,7 @@ if (isset($_POST["btnSubmit"])) {
         $allowedMessage = "You cannot upload files of this type!";
     }
     if (mysqli_query($conn, $query_photo)) {
-        $messagePhoto = '<div class="alert alert-danger" role="alert">Success: Your profile picture has been updated!</div>';
+        $messagePhoto = '<div class="alert alert-success" role="success">Success: Your profile picture has been updated!</div>';
     } else {
         $messageErrorPhoto = 'Error in inserting information, please try again';
     }
@@ -81,26 +81,26 @@ if (isset($_POST["btnSubmitInfo"])) {
     <ul class="navItems">
 
         <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) { ?>
-            <div class="dropdown">
-                <button class="dropbtn">Account</button>
-                <div class="dropdown-content">
-                    <li><a class="dropdown-item" href="myProfile.php">My profile</a></li>
-                    <?php if ($_SESSION["status"] == 'a' || $_SESSION["status"] == 'r') { ?>
-                        <li><a class="dropdown-item" href="myRestaurant.php">My restaurants</a></li>
-                    <?php } ?>
-                    <li><a class="dropdown-item" href="myFavorite.php">My favorites</a></li>
-                    <?php
+        <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+                <li><a class="dropdown-item" href="myProfile.php">My profile</a></li>
+                <?php if ($_SESSION["status"] == 'a' || $_SESSION["status"] == 'r') { ?>
+                <li><a class="dropdown-item" href="myRestaurant.php">My restaurants</a></li>
+                <?php } ?>
+                <li><a class="dropdown-item" href="myFavorite.php">My favorites</a></li>
+                <?php
                     if ($_SESSION["status"] == "a") { ?>
-                        <li><a class="dropdown-item" href="manage-user.php">Manage Users</a></li>
-                    <?php } ?>
-                    <div class="dropdown-divider"></div>
-                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                </div>
+                <li><a class="dropdown-item" href="manage-user.php">Manage Users</a></li>
+                <?php } ?>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
             </div>
+        </div>
         <?php } ?>
 
         <?php if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == false) { ?>
-            <li><a class="navItem" href="login.php">Login</a></li>
+        <li><a class="navItem" href="login.php">Login</a></li>
         <?php } ?>
 
     </ul>
@@ -180,9 +180,9 @@ if (isset($_POST["btnSubmitInfo"])) {
 </div>
 </body>
 <script type="text/javascript">
-    function preview() {
-        frame.src = URL.createObjectURL(event.target.files[0]);
-    }
+function preview() {
+    frame.src = URL.createObjectURL(event.target.files[0]);
+}
 </script>
 <footer>
     <div class="logo">
