@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "efresto";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
